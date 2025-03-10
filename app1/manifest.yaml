@@ -16,7 +16,7 @@ spec:
   # this is pod definition
   template:
     metadata:
-      # these labels belongs to pod
+      # these labels belongs to pod 
       labels:
         name: app1
         tier: frontend
@@ -47,14 +47,14 @@ metadata:
       #kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
-      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:315069654700:certificate/eefec79d-8012-4e7e-a530-baf154b833f2
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:147997118415:certificate/a11dc3d1-eee7-4e06-9f11-1640909cd787
       alb.ingress.kubernetes.io/listen-ports: '[ {"HTTPS": 443} ]'
       alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
       alb.ingress.kubernetes.io/group.name: expense
 spec:
     ingressClassName: alb
     rules:
-    - host: "app1.daws81s.online"
+    - host: "app1.harshadaws81s.online"
       http:
         paths:
         - pathType: Prefix
